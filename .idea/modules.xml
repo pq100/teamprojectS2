@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/msa-frontend/msa-frontend.iml" filepath="$PROJECT_DIR$/msa-frontend/msa-frontend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msa-parking-service/msa-parking-service.iml" filepath="$PROJECT_DIR$/msa-parking-service/msa-parking-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/teamprojectS2.iml" filepath="$PROJECT_DIR$/teamprojectS2.iml" />
+    </modules>
+  </component>
+</project>

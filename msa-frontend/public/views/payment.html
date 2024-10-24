@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주차관제시스템</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .parking-status {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .parking-slot {
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            width: 150px;
+        }
+
+        .available {
+            background-color: #4caf50;
+            color: #fff;
+        }
+
+        .occupied {
+            background-color: #f44336;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;  /* 'absolute'에서 'relative'로 변경 */
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>주차관제시스템</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">메인</a></li>
+            <li><a href="#parking-status">주차 상태</a></li>
+            <li><a href="#contact">비상 연락</a></li>
+            <li><a href="/payment">결제 확인 및 통계</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="parking-graph">
+        <h2>통계 그래프</h2>
+        <p>주차관제 시스템의 통계 그래프입니다.</p>
+    </section>
+
+    <section id="payment-history">
+        <h2>결제 내역</h2>
+        <div id="payment-history-container"></div>
+    </section>
+
+    <section id="register-car">
+        <h2>차량 조회</h2>
+        <form id="car-search-form">
+            <label for="car-number">차량 번호 입력:</label>
+            <input type="text" id="car-number" name="car-number" required>
+            <button type="submit">조회하기</button>
+        </form>
+        <div id="car-search-result"></div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Parking Management System. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
